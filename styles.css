@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background-color: #bc6c25;
+    text-align      : center;
+    color           : #002535
+}
+
+.container {
+    height         : 70vh;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+}
+
+.game {
+    height         : 60vh;
+    width          : 60vh;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    align-items    : center;
+    gap            : 0.5rem;
+    padding        : 9rem 5rem;
+}
+
+.box {
+    height          : 18vh;
+    width           : 18vh;
+    background-color: #fefae0;
+    border-radius   : 1rem;
+    font-size       : 2rem;
+    color           : #911601;
+    border          : none;
+    cursor          : pointer;
+    box-shadow      : 8px 8px 18px #342b17;
+}
+
+h1 {
+    font-size  : 3rem;
+    font-weight: 700;
+    color      : #210500;
+    text-shadow: 3px 3px 8px #ffffff;
+}
+
+#reset-btn {
+    padding         : 1rem;
+    font-size       : 15px;
+    background-color: #002535;
+    color           : #fefae0;
+    border          : none;
+    border-radius   : 2rem;
+    cursor          : pointer;
+}
+
+#msg {
+    font-size  : 3rem;
+    color      : rgb(46, 13, 0);
+    text-shadow: 3px 3px 10px rgb(255, 255, 255);
+}
+
+.msg-container {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    gap            : 20rem 2rem;
+    margin-block   : 15rem;
+    display        : none;
+}
+
+.msg-container.active {
+    display: flex;
+}
+
+#new-btn {
+    padding         : 1rem;
+    font-size       : 15px;
+    background-color: #002535;
+    color           : #fefae0;
+    border          : none;
+    border-radius   : 2rem;
+    cursor          : pointer;
+}
